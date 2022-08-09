@@ -16,7 +16,6 @@ function encryptDecrypt(text, filter) {
     let found = text.indexOf(textA[i]);
     while (found !== -1) {
       resultText = replaceLetter(found, resultText, textB[i]);
-      console.log(resultText);
       found = text.indexOf(textA[i], found + 1);
     }
   }
